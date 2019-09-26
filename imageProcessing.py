@@ -1,9 +1,10 @@
 import cv2 as cv
 
 
-def imageProcess(image, gamma):
+def image_process(image, gamma):
+
     img = cv.imread(image, 1)
-    cv.imshow("Original",img)
+    cv.imshow("Original", img)
     for i in range(len(img)):
         for j in range(len(img[i])):
             for k in range(len(img[i][j])):
@@ -21,5 +22,4 @@ def imageProcess(image, gamma):
     cv.destroyAllWindows()
 
 
-imageProcess('kupu.jpeg', 1.5)
-
+image_process('Katriana.jpg', 0.3)
